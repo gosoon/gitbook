@@ -1,0 +1,1017 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>kubernetes api 总览 · GitBook Clarity</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhilidali">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="client-go.html" />
+    
+    
+    <link rel="prev" href="blog.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://zhilidali.github.io/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../golang/README.md">
+            
+                <span>
+            
+                    
+                    golang 高级进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../golang/iota.html">
+            
+                <a href="../golang/iota.html">
+            
+                    
+                    iota
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../golang/blog.html">
+            
+                <a href="../golang/blog.html">
+            
+                    
+                    golang blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../golang/sort.html">
+            
+                <a href="../golang/sort.html">
+            
+                    
+                    golang sort 库函数排序的几种实现方法.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../golang/context.html">
+            
+                <a href="../golang/context.html">
+            
+                    
+                    golang context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../golang/gomock.html">
+            
+                <a href="../golang/gomock.html">
+            
+                    
+                    gomock
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="README.md">
+            
+                <span>
+            
+                    
+                     kubernetes 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="blog.html">
+            
+                <a href="blog.html">
+            
+                    
+                    kubernetes 相关博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="api.html">
+            
+                <a href="api.html">
+            
+                    
+                    kubernetes api 总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="client-go.html">
+            
+                <a href="client-go.html">
+            
+                    
+                    client-go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="cni.html">
+            
+                <a href="cni.html">
+            
+                    
+                    cni
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../devops/README.md">
+            
+                <span>
+            
+                    
+                     DEVOPS 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../devops/blog.html">
+            
+                <a href="../devops/blog.html">
+            
+                    
+                     blog 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >kubernetes api 总览</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>kubectl  &#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x8C03;&#x7528; kube-apisever &#x7684; API &#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x5B50;&#x547D;&#x4EE4;&#x90FD;&#x6709;&#x76F8;&#x5E94;&#x7684; API&#xFF0C;&#x6BCF;&#x6B21;&#x5728;&#x8C03;&#x7528; kubectl &#x65F6;&#x4F7F;&#x7528;&#x53C2;&#x6570;  -v=9  &#x53EF;&#x4EE5;&#x770B;&#x8C03;&#x7528;&#x7684;&#x76F8;&#x5173; API&#xFF0C;&#x4F8B;&#xFF1A;</p>
+<p><code>$ kubectl get node -v=9</code> </p>
+<p>&#x4EE5;&#x4E0B;&#x4E3A; kubernetes &#x5F00;&#x53D1;&#x4E2D;&#x5E38;&#x7528;&#x7684; API&#xFF1A;</p>
+<h3 id="deployment">Deployment</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-tn4b{background-color:#f9f9f9;font-size:xx-small;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-hvas{font-size:xx-small;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">ListDeployments</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments</td>
+    <td class="tg-tn4b">labelSelector</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">GetDeployment</td>
+    <td class="tg-hvas">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments/{name}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">CreateDeployment</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">v1.Deployment</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Post</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">UpdateDeployment</td>
+    <td class="tg-hvas">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments/{name}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">v1.Deployment</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Put</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">PatchDeployment</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments/{name}</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">v1.Deployment</td>
+    <td class="tg-tn4b">application/<br>json-<br>patch+<br>json</td>
+    <td class="tg-tn4b">Patch</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">DeleteDeployment</td>
+    <td class="tg-hvas">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments/{name}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Delete</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">GetDeploymentScale</td>
+    <td class="tg-tn4b">/apis/extensions/v1beta1/namespaces/<br>{namespace}/deployments/{name}/scale</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">PatchDeploymentScale</td>
+    <td class="tg-hvas">/apis/extensions/v1beta1/namespaces/<br>{namespace}/deployments/{name}/scale</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">v1.Scale</td>
+    <td class="tg-hvas">application/<br>strategic<br>-merge-patch<br>+json</td>
+    <td class="tg-hvas">Patch</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">DeleteDeployment</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/deployments</td>
+    <td class="tg-tn4b">labelSelector</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Delete</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">DeleteReplicaSet</td>
+    <td class="tg-hvas">/apis/extensions/v1beta1/namespaces/<br>{namespace}/replicasets</td>
+    <td class="tg-hvas">labelSelector</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Delete</td>
+  </tr>
+</table>
+
+<h3 id="pod">Pod</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-bstp{background-color:#f9f9f9;font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-tn4b{background-color:#f9f9f9;font-size:xx-small;text-align:left;vertical-align:top}
+.tg .tg-r462{background-color:#f9f9f9;font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-bstp">ListPods</td>
+    <td class="tg-bstp">/api/v1/namespaces/{namespace}/pods<br>/api/v1/pods</td>
+    <td class="tg-bstp">labelSelector</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-mx66">GetPod</td>
+    <td class="tg-mx66">/api/v1/namespaces/{namespace}/pods/{name}</td>
+    <td class="tg-mx66">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-r462">CreatePod</td>
+    <td class="tg-r462">/api/v1/namespaces/{namespace}/pods</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">v1.Pod</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Post</td>
+  </tr>
+  <tr>
+    <td class="tg-kd1j">UpdatePod</td>
+    <td class="tg-kd1j">/api/v1/namespaces/{namespace}/pods/{name}</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">v1.Pod</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">Put</td>
+  </tr>
+  <tr>
+    <td class="tg-r462">DeletePod</td>
+    <td class="tg-r462">/api/v1/namespaces/{namespace}/pods/{name}</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Delete</td>
+  </tr>
+  <tr>
+    <td class="tg-kd1j">WatchPodsAll</td>
+    <td class="tg-kd1j">/api/v1/watch/namespaces/{namespace}/pods<br>/api/v1/watch/pods</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">&quot;Accept&quot;,<br>&quot;application/json, <br>*/*&quot;</td>
+    <td class="tg-kd1j">Get<br></td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">GetPodLog</td>
+    <td class="tg-tn4b">/api/v1/namespaces/{namespace}/pods/{name}/log</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+</table>
+
+<h3 id="pv">PV</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-tn4b{background-color:#f9f9f9;font-size:xx-small;text-align:left;vertical-align:top}
+.tg .tg-r462{background-color:#f9f9f9;font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-hvas{font-size:xx-small;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-r462">CreatePVC</td>
+    <td class="tg-r462">/api/v1/namespaces/{namespace}/persistentvolumeclaims</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">v1.Persistent<br>VolumeClaim</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Post</td>
+  </tr>
+  <tr>
+    <td class="tg-kd1j">GetPVC</td>
+    <td class="tg-kd1j">/api/v1/namespaces/{namespace}/persistentvolumeclaims/{pvc}</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">DeletePVC</td>
+    <td class="tg-tn4b">/api/v1/namespaces/{namespace}/persistentvolumeclaims/{pvc}</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Delete</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">DeletePV</td>
+    <td class="tg-hvas">/api/v1/persistentvolumes/{pv}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Delete</td>
+  </tr>
+</table>
+
+<h3 id="service">Service</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-r462{background-color:#f9f9f9;font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-r462">ListServices</td>
+    <td class="tg-r462">/api/v1/namespaces/{namespace}/services</td>
+    <td class="tg-r462">labelSelector</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-kd1j">GetService</td>
+    <td class="tg-kd1j">/api/v1/namespaces/{namespace}/services/{service}</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-r462">WatchServiceAll</td>
+    <td class="tg-r462">/api/v1/watch/namespaces/{namespace}/services</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-kd1j">WatchService</td>
+    <td class="tg-kd1j">/api/v1/watch/namespaces/{namespace}/services/{service}</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-r462">CreateService</td>
+    <td class="tg-r462">/api/v1/namespaces/{namespace}/services</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">v1.Service</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Post</td>
+  </tr>
+  <tr>
+    <td class="tg-kd1j">UpdateService</td>
+    <td class="tg-kd1j">/api/v1/namespaces/{namespace}/services/{service}</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">v1.Service</td>
+    <td class="tg-kd1j">-</td>
+    <td class="tg-kd1j">Put</td>
+  </tr>
+  <tr>
+    <td class="tg-r462">DeleteService</td>
+    <td class="tg-r462">/api/v1/namespaces/{namespace}/services/{service}</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">-</td>
+    <td class="tg-r462">Delete</td>
+  </tr>
+</table>
+
+
+<h3 id="statefulset">Statefulset</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-tn4b{background-color:#f9f9f9;font-size:xx-small;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-hvas{font-size:xx-small;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">ListStatefulSet</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/statefulsets</td>
+    <td class="tg-tn4b">labelSelector</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">GetStatefulSet</td>
+    <td class="tg-hvas">/apis/apps/v1beta1/namespaces/<br>{namespace}/statefulsets/{name}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">CreateStatefulSet</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/statefulsets</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">v1.StatefulSet</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Post</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">UpdateStatefulSet</td>
+    <td class="tg-hvas">/apis/apps/v1beta1/namespaces/<br>{namespace}/statefulsets/{name}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">v1.StatefulSet</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Put</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">PatchStatefulSet</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/statefulsets/{name}</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">v1.StatefulSet</td>
+    <td class="tg-tn4b">application/<br>json-patch+json</td>
+    <td class="tg-tn4b">Patch</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">PatchStatefulSetScale</td>
+    <td class="tg-hvas">/apis/extensions/v1beta1/namespaces/<br>{namespace}/statefulsets/{name}/scale</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">v1.Scale</td>
+    <td class="tg-hvas">application/<br>strategic-merge<br>-patch+json</td>
+    <td class="tg-hvas">Patch</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">DeleteStatefulSet</td>
+    <td class="tg-tn4b">/apis/apps/v1beta1/namespaces/<br>{namespace}/statefulsets/{name}</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Delete</td>
+  </tr>
+</table>
+
+
+<h3 id="storageclass">StorageClass</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-buh4{background-color:#f9f9f9;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-buh4">ListStorageClass</td>
+    <td class="tg-buh4">/apis/storage.k8s.io/v1/storageclasses</td>
+    <td class="tg-buh4">-</td>
+    <td class="tg-buh4">-</td>
+    <td class="tg-buh4">-</td>
+    <td class="tg-buh4">Get</td>
+  </tr>
+</table>
+
+<h3 id="nodes">Nodes</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-sg5v{font-size:100%;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0w8i{font-size:100%;text-align:left;vertical-align:top}
+.tg .tg-nlf0{font-size:100%;border-color:inherit;text-align:left}
+.tg .tg-87db{background-color:#f9f9f9;font-size:100%;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-nlf0">&#x64CD;&#x4F5C;</th>
+    <th class="tg-nlf0">api</th>
+    <th class="tg-nlf0">url&#x53C2;&#x6570;</th>
+    <th class="tg-sg5v">body</th>
+    <th class="tg-sg5v">header</th>
+    <th class="tg-sg5v">method</th>
+  </tr>
+  <tr>
+    <td class="tg-87db">ListNodes</td>
+    <td class="tg-87db">/api/v1/nodes</td>
+    <td class="tg-87db">labelSelector</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-0w8i">GetNode</td>
+    <td class="tg-0w8i">/api/v1/nodes/{name}</td>
+    <td class="tg-0w8i">-</td>
+    <td class="tg-0w8i">-</td>
+    <td class="tg-0w8i">-</td>
+    <td class="tg-0w8i">GetNode</td>
+  </tr>
+  <tr>
+    <td class="tg-87db">CreateNode</td>
+    <td class="tg-87db">api/v1/nodes</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">v1.Node</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">Post</td>
+  </tr>
+  <tr>
+    <td class="tg-0w8i">UpdateNode</td>
+    <td class="tg-0w8i">/api/v1/nodes/{name}</td>
+    <td class="tg-0w8i">-</td>
+    <td class="tg-0w8i">v1.Node</td>
+    <td class="tg-0w8i">-</td>
+    <td class="tg-0w8i">Put</td>
+  </tr>
+  <tr>
+    <td class="tg-87db">DeleteNode</td>
+    <td class="tg-87db">/api/v1/nodes/{name}</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">-</td>
+    <td class="tg-87db">Delete</td>
+  </tr>
+</table>
+
+
+<h3 id="endpoints">Endpoints</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-tn4b{background-color:#f9f9f9;font-size:xx-small;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-hvas{font-size:xx-small;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">ListEndpoints</td>
+    <td class="tg-tn4b">/api/v1/namespaces/{namespace}/endpoints<br>/api/v1/endpoints</td>
+    <td class="tg-tn4b">labelSelector</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">GetEndpoints</td>
+    <td class="tg-hvas">/api/v1/namespaces/{namespace}/<br>endpoints/{service}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">ListEvents</td>
+    <td class="tg-tn4b">/api/v1/namespaces/{namespace}/events<br>/api/v1/events</td>
+    <td class="tg-tn4b">fieldSelector</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">WatchEndpointsAll</td>
+    <td class="tg-tn4b">/api/v1/watch/namespaces/{namespace}/endpoints<br>/api/v1/watch/endpoints</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-hvas">WatchEndpoints</td>
+    <td class="tg-hvas">/api/v1/watch/namespaces/{namespace}/<br>endpoints/{service}</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Accept, <br>application/json<br>, */*</td>
+    <td class="tg-hvas">Get</td>
+  </tr>
+</table>
+
+<h3 id="namespace">Namespace</h3>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-mx66{font-size:xx-small;border-color:inherit;text-align:left}
+.tg .tg-tn4b{background-color:#f9f9f9;font-size:xx-small;text-align:left;vertical-align:top}
+.tg .tg-kd1j{font-size:xx-small;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-hvas{font-size:xx-small;text-align:left;vertical-align:top}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-mx66">&#x64CD;&#x4F5C;</th>
+    <th class="tg-mx66">api</th>
+    <th class="tg-mx66">url&#x53C2;&#x6570;</th>
+    <th class="tg-kd1j">body</th>
+    <th class="tg-kd1j">header</th>
+    <th class="tg-kd1j">method</th>
+  </tr>
+  <tr>
+    <td class="tg-hvas">ListNamespaces</td>
+    <td class="tg-hvas">/api/v1/namespaces</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">-</td>
+    <td class="tg-hvas">Get</td>
+  </tr>
+  <tr>
+    <td class="tg-tn4b">WatchNamespaces</td>
+    <td class="tg-tn4b">/api/v1/watch/namespaces</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">-</td>
+    <td class="tg-tn4b">Accept, <br>application/json<br>, */*</td>
+    <td class="tg-tn4b">Get</td>
+  </tr>
+</table>
+
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="blog.html" class="navigation navigation-prev " aria-label="Previous page: kubernetes 相关博客">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="client-go.html" class="navigation navigation-next " aria-label="Next page: client-go">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"kubernetes api 总览","level":"1.3.2","depth":2,"next":{"title":"client-go","level":"1.3.3","depth":2,"path":"kubernetes/client-go.md","ref":"kubernetes/client-go.md","articles":[]},"previous":{"title":"kubernetes 相关博客","level":"1.3.1","depth":2,"path":"kubernetes/blog.md","ref":"kubernetes/blog.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhilidali 2016","modify_label":"该文件修订于:","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhilidali/"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"src/images/wechatpay.png","alipay":"src/images/alipay.png","title":"坚持原创技术分享，您的支持将鼓励我继续创作！","button":"打赏"},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhilidali","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Clarity","language":"zh-hans","links":{"sidebar":{"Home":"https://zhilidali.github.io/"}},"gitbook":"*","description":"《GitBook Clarity》一本专业轻松学GitBook的透明教程书，没有之一"},"file":{"path":"kubernetes/api.md","mtime":"2019-02-27T01:48:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-27T01:49:35.772Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
