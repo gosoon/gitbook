@@ -51,6 +51,15 @@
 [<font color="red">张馆长的博客</font>](https://zhangguanzhang.github.io/) <br/>
 [<font color="red">draveness</font>](https://draveness.me/) <br/>
 
+[自言自语](http://liubin.org/blog/2018/04/28/how-to-build-controller-manager-high-available/) <br/>
+[jetstack blog](https://blog.jetstack.io) <br/>
+[<font color="red">CCE 云容器引擎</font>](https://blog.51cto.com/13762283) <br/>
+[<font color="red">polarwu的博客(k8s 源码分析)</font>](https://blog.csdn.net/weixin_39961559/article/list/2?) <br/>
+[<font color="red">晒太阳的猫</font>](https://zhengyinyong.com) <br/>
+[<font color="red">吴叶磊</font>](https://aleiwu.com/) <br/>
+[<font color="red">进德</font>](https://blog.csdn.net/weixin_42663840/article/details/                                      81482553#%E9%99%90%E9%80%9F%E9%98%9F%E5%88%97) <br/>
+[<font color="red">没什么逻辑</font>](https://draveness.me) <br/>
+[<font color="red">喜马拉雅架构师</font>](http://qiankunli.github.io/) <br/>
 
 [jetstack blog](https://blog.jetstack.io) <br/>
 
