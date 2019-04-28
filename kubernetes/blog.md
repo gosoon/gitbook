@@ -66,8 +66,9 @@
 [<font color="red">学无止境 blog</font>](https://blog.51cto.com/newfly) <br/>
 [<font color="red">Bamboo's blog</font>](http://bamboox.online) <br/>
 
-外文博客
+##### 外文博客
 [<font color="red">weave</font>](https://www.weave.works) <br/>
+[<font color="red">cncf blog</font>](https://www.cncf.io/blog) <br/>
 
 
 
