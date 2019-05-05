@@ -69,6 +69,7 @@
 ##### 外文博客
 [<font color="red">weave</font>](https://www.weave.works) <br/>
 [<font color="red">cncf blog</font>](https://www.cncf.io/blog) <br/>
+[<font color="red">giantswarm</font>](https://blog.giantswarm.io/) <br/>
 
 
 

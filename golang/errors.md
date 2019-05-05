@@ -36,5 +36,9 @@ if ok, id := IsUserNotFound(err); ok {
 
 
 
+#### 3. use pkg/errors  
+
+[https://github.com/pkg/errors](https://github.com/pkg/errors)
+
 
 [参考链接](https://banzaicloud.com/blog/error-handling-go/)

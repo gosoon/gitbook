@@ -8,6 +8,13 @@
   * [golang sort 库函数排序的几种实现方法.1](golang/sort.md)
   * [golang context](golang/context.md)
   * [gomock](golang/gomock.md)
+  * [errors](golang/errors.md)
+  * [io](golang/io.md)
+  * [make](golang/make.md)
+  * [recover](golang/recover.md)
+  * [signal](golang/signal.md)
+  * [time](golang/time.md)
+  * [float](golang/float.md)
 
 * [ kubernetes ](kubernetes/README.md)
   * [kubernetes 相关博客](kubernetes/blog.md)
@@ -17,3 +24,6 @@
 
 * [ DEVOPS ](devops/README.md)
   * [ blog ](devops/blog.md)
+
+* [ CODE ](code/README.md)
+  * [ words ](code/words.md)

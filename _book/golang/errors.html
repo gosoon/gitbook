@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>golang context · GitBook Clarity</title>
+        <title>errors · GitBook Clarity</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="gomock.html" />
+    <link rel="next" href="io.html" />
     
     
-    <link rel="prev" href="sort.html" />
+    <link rel="prev" href="gomock.html" />
     
 
     </head>
@@ -168,7 +168,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4" data-path="context.html">
+        <li class="chapter " data-level="1.2.4" data-path="context.html">
             
                 <a href="context.html">
             
@@ -194,7 +194,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="errors.html">
+        <li class="chapter active" data-level="1.2.6" data-path="errors.html">
             
                 <a href="errors.html">
             
@@ -455,7 +455,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >golang context</a>
+        <a href=".." >errors</a>
     </h1>
 </div>
 
@@ -470,31 +470,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>golang context </p>
-<p><a href="http://www.opscoder.info/golang_context.html" target="_blank">&#x6DF1;&#x5165;Golang&#x4E4B;context</a>
-<a href="https://github.com/Kevin-fqh/learning-k8s-source-code/blob/master/Go-package%E4%BD%BF%E7%94%A8/Context%E7%94%A8%E6%B3%95.md" target="_blank">context &#x7528;&#x6CD5;</a></p>
-<pre><code>func main() {
-    ctx, cancel := context.WithCancel(context.Background())
-
-    go func(ctx context.Context) {
-        fmt.Println(&quot;time sleep&quot;)
-        time.Sleep(2 * time.Second)
-    }(ctx)
-    time.Sleep(1 * time.Second)
-    cancel()
+                                <p>Error handling practices in Go</p>
+<h4 id="1return-custom-errors">1.Return custom errors</h4>
+<p>this need define custom errors and return it.</p>
+<h5 id="1-define-an-api-for-errors">(1) define an API for errors</h5>
+<pre><code>type userNotFound interface {
+    UserNotFound() (bool, int64)
 }
-</code></pre><pre><code>func main() {
-    ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
-    defer cancel()
 
-    select {
-    case &lt;-time.After(2 * time.Minute):
-        fmt.Println(&quot;overslept&quot;)
-    case &lt;-ctx.Done():
-        fmt.Println(ctx.Err()) // prints &quot;context deadline exceeded&quot;
+func IsUserNotFound(err error) (bool, int64) {
+    if e, ok := err.(userNotFound); ok {
+        return e.UserNotFound()
     }
+
+    return false, 0
 }
-</code></pre>
+
+user, err := repository.GetUser(1)
+
+if ok, id := IsUserNotFound(err); ok {
+    // user not found, log the user id
+}
+</code></pre><h5 id="2-define-an-api-for-errors">(2) define an API for errors</h5>
+<h4 id="2dont-just-return-errors">2.Don&#x2019;t just return errors</h4>
+<h4 id="3-use-pkgerrors">3. use pkg/errors</h4>
+<p><a href="https://github.com/pkg/errors" target="_blank">https://github.com/pkg/errors</a></p>
+<p><a href="https://banzaicloud.com/blog/error-handling-go/" target="_blank">&#x53C2;&#x8003;&#x94FE;&#x63A5;</a></p>
+
                                 
                                 </section>
                             
@@ -521,12 +523,12 @@
 
             
                 
-                <a href="sort.html" class="navigation navigation-prev " aria-label="Previous page: golang sort 库函数排序的几种实现方法.1">
+                <a href="gomock.html" class="navigation navigation-prev " aria-label="Previous page: gomock">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="gomock.html" class="navigation navigation-next " aria-label="Next page: gomock">
+                <a href="io.html" class="navigation navigation-next " aria-label="Next page: io">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -537,7 +539,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"golang context","level":"1.2.4","depth":2,"next":{"title":"gomock","level":"1.2.5","depth":2,"path":"golang/gomock.md","ref":"golang/gomock.md","articles":[]},"previous":{"title":"golang sort 库函数排序的几种实现方法.1","level":"1.2.3","depth":2,"path":"golang/sort.md","ref":"golang/sort.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhilidali 2016","modify_label":"该文件修订于:","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhilidali/"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"src/images/wechatpay.png","alipay":"src/images/alipay.png","title":"坚持原创技术分享，您的支持将鼓励我继续创作！","button":"打赏"},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhilidali","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Clarity","language":"zh-hans","links":{"sidebar":{"Home":"https://zhilidali.github.io/"}},"gitbook":"*","description":"《GitBook Clarity》一本专业轻松学GitBook的透明教程书，没有之一"},"file":{"path":"golang/context.md","mtime":"2019-04-02T12:01:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-05T10:04:15.165Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"errors","level":"1.2.6","depth":2,"next":{"title":"io","level":"1.2.7","depth":2,"path":"golang/io.md","ref":"golang/io.md","articles":[]},"previous":{"title":"gomock","level":"1.2.5","depth":2,"path":"golang/gomock.md","ref":"golang/gomock.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhilidali 2016","modify_label":"该文件修订于:","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhilidali/"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"src/images/wechatpay.png","alipay":"src/images/alipay.png","title":"坚持原创技术分享，您的支持将鼓励我继续创作！","button":"打赏"},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhilidali","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Clarity","language":"zh-hans","links":{"sidebar":{"Home":"https://zhilidali.github.io/"}},"gitbook":"*","description":"《GitBook Clarity》一本专业轻松学GitBook的透明教程书，没有之一"},"file":{"path":"golang/errors.md","mtime":"2019-04-29T02:04:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-05T10:04:15.165Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
