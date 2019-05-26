@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>float · GitBook Clarity</title>
+        <title>golang 依赖管理工具 · GitBook Clarity</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="dependency.html" />
+    <link rel="next" href="../kubernetes/README.md" />
     
     
-    <link rel="prev" href="time.html" />
+    <link rel="prev" href="float.html" />
     
 
     </head>
@@ -272,7 +272,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.12" data-path="float.html">
+        <li class="chapter " data-level="1.2.12" data-path="float.html">
             
                 <a href="float.html">
             
@@ -285,7 +285,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.13" data-path="dependency.html">
+        <li class="chapter active" data-level="1.2.13" data-path="dependency.html">
             
                 <a href="dependency.html">
             
@@ -468,7 +468,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >float</a>
+        <a href=".." >golang 依赖管理工具</a>
     </h1>
 </div>
 
@@ -483,23 +483,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x6D6E;&#x70B9;&#x7CBE;&#x5EA6;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
-<pre><code>package main
-
-import (
-    &quot;fmt&quot;
-
-    &quot;github.com/shopspring/decimal&quot;
-)
-
-func main() {
-    a := float64(0.00000001)
-    dec := decimal.NewFromFloat(a)
-
-    fmt.Println(dec.String())
-}
-</code></pre><p>&#x53C2;&#x8003;&#xFF1A; <a href="https://toutiao.io/posts/245965/app_preview" target="_blank">https://toutiao.io/posts/245965/app_preview</a></p>
-
+                                <h4 id="glide-tutorial">glide tutorial</h4>
+<p>install glide</p>
+<pre><code>$ go get github.com/Masterminds/glide
+$ go install github.com/Masterminds/glide
+</code></pre><p>init go project</p>
+<pre><code>$ cd $GOPATH/src/foor
+$ glide init
+</code></pre><p>install dependency</p>
+<pre><code>$ glide install
+</code></pre>
                                 
                                 </section>
                             
@@ -526,12 +519,12 @@ func main() {
 
             
                 
-                <a href="time.html" class="navigation navigation-prev " aria-label="Previous page: time">
+                <a href="float.html" class="navigation navigation-prev " aria-label="Previous page: float">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="dependency.html" class="navigation navigation-next " aria-label="Next page: golang 依赖管理工具">
+                <a href="../kubernetes/README.md" class="navigation navigation-next " aria-label="Next page:  kubernetes ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -542,7 +535,7 @@ func main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"float","level":"1.2.12","depth":2,"next":{"title":"golang 依赖管理工具","level":"1.2.13","depth":2,"path":"golang/dependency.md","ref":"golang/dependency.md","articles":[]},"previous":{"title":"time","level":"1.2.11","depth":2,"path":"golang/time.md","ref":"golang/time.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhilidali 2016","modify_label":"该文件修订于:","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhilidali/"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"src/images/wechatpay.png","alipay":"src/images/alipay.png","title":"坚持原创技术分享，您的支持将鼓励我继续创作！","button":"打赏"},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhilidali","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Clarity","language":"zh-hans","links":{"sidebar":{"Home":"https://zhilidali.github.io/"}},"gitbook":"*","description":"《GitBook Clarity》一本专业轻松学GitBook的透明教程书，没有之一"},"file":{"path":"golang/float.md","mtime":"2019-04-02T12:01:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-26T02:15:44.673Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"golang 依赖管理工具","level":"1.2.13","depth":2,"next":{"title":" kubernetes ","level":"1.3","depth":1,"path":"kubernetes/README.md","ref":"kubernetes/README.md","articles":[{"title":"kubernetes 相关博客","level":"1.3.1","depth":2,"path":"kubernetes/blog.md","ref":"kubernetes/blog.md","articles":[]},{"title":"kubernetes api 总览","level":"1.3.2","depth":2,"path":"kubernetes/api.md","ref":"kubernetes/api.md","articles":[]},{"title":"client-go","level":"1.3.3","depth":2,"path":"kubernetes/client-go.md","ref":"kubernetes/client-go.md","articles":[]},{"title":"cni","level":"1.3.4","depth":2,"path":"kubernetes/cni.md","ref":"kubernetes/cni.md","articles":[]}]},"previous":{"title":"float","level":"1.2.12","depth":2,"path":"golang/float.md","ref":"golang/float.md","articles":[]},"dir":"ltr"},"config":{"plugins":["splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhilidali 2016","modify_label":"该文件修订于:","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/zhilidali/"},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"wechat":"src/images/wechatpay.png","alipay":"src/images/alipay.png","title":"坚持原创技术分享，您的支持将鼓励我继续创作！","button":"打赏"},"fontsettings":{"theme":"white","family":"sans","size":1},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhilidali","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Clarity","language":"zh-hans","links":{"sidebar":{"Home":"https://zhilidali.github.io/"}},"gitbook":"*","description":"《GitBook Clarity》一本专业轻松学GitBook的透明教程书，没有之一"},"file":{"path":"golang/dependency.md","mtime":"2019-05-15T07:54:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-26T02:15:44.673Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
