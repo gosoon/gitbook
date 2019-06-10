@@ -66,6 +66,8 @@
 [<font color="red">学无止境 blog</font>](https://blog.51cto.com/newfly) <br/>
 [<font color="red">Bamboo's blog</font>](http://bamboox.online) <br/>
 [<font color="red">ggaaooppeenngg</font>](https://ggaaooppeenngg.github.io/archives/) <br/>
+[<font color="red">shida_csdn</font>](https://blog.csdn.net/shida_csdn/article/details/84286058) <br/>
+[<font color="red">崔秀龙</font>](https://blog.fleeto.us/) <br/>
 
 ##### 外文博客
 [<font color="red">weave</font>](https://www.weave.works) <br/>
