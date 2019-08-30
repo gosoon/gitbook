@@ -15,6 +15,7 @@
   * [signal](golang/signal.md)
   * [time](golang/time.md)
   * [float](golang/float.md)
+  * [test](golang/test.md)
   * [golang 依赖管理工具](golang/dependency.md)
 
 * [ kubernetes ](kubernetes/README.md)
@@ -28,3 +29,6 @@
 
 * [ CODE ](code/README.md)
   * [ words ](code/words.md)
+
+* [ VIEW ](view/README.md)
+  * [ view ](view/view.md)

@@ -36,7 +36,6 @@
 [柳清风的专栏](https://blog.csdn.net/u010278923?t=1) <br/>
 [<font color="red">Robin Blog-源码分析</font>](https://supereagle.github.io/) <br/>
 [阳明的博客](https://www.qikqiak.com/) <br/>
-[learning-k8s-source-code](https://github.com/Kevin-fqh/learning-k8s-source-code) <br>
 [shalou的博客](http://licyhust.com/tag/) <br>
 [郭少巍的博客(360)](https://wilhelmguo.tk/blog/william) <br>
 [tianpeng du](https://rocdu.io/) <br>
@@ -68,11 +67,35 @@
 [<font color="red">ggaaooppeenngg</font>](https://ggaaooppeenngg.github.io/archives/) <br/>
 [<font color="red">shida_csdn</font>](https://blog.csdn.net/shida_csdn/article/details/84286058) <br/>
 [<font color="red">崔秀龙</font>](https://blog.fleeto.us/) <br/>
+[<font color="red">xiaomi-gaorong</font>](https://www.cnblogs.com/gaorong) <br/>
+[<font color="red">mage-Kubernetes</font>](https://pdf.us/2019/03/01/2903.html) <br/>
+[<font color="red">本饼干的日本码农就职总结</font>](http://vinci7.github.io/) <br/>
+
+
+### kubernetes github  learn
+[learning-k8s-source-code](https://github.com/Kevin-fqh/learning-k8s-source-code) <br>
+[kube-ladder](https://github.com/caicloud/kube-ladder) <br>
+
+
+### kubernetes operator
+[Kubernetes Operator最佳实践](http://dockone.io/article/9088) <br>
+
+
+### book 
+[](https://www.bookstack.cn/read/huweihuang-kubernetes-notes/develop-client-go.md)
+
+### ceph
+[<font color="red"> ceph blog</font>](http://www.yangguanjun.com/archives/) <br/>
+
 
 ##### 外文博客
 [<font color="red">weave</font>](https://www.weave.works) <br/>
 [<font color="red">cncf blog</font>](https://www.cncf.io/blog) <br/>
 [<font color="red">giantswarm</font>](https://blog.giantswarm.io/) <br/>
+[<font color="red">banzaicloud</font>](https://banzaicloud.com/blog) <br/>
+
+#### etcd 
+[<font color="red">冯绍宝</font>](https://bbs.huaweicloud.com/community/usersnew/id_1523159494993289) <br/>
 
 
 
@@ -92,6 +115,7 @@ https://bbs.huaweicloud.com/forum/forum.php?mod=viewthread&tid=10665&page=1&extr
 [阳一yayi](https://www.jianshu.com/u/45965c9ab60a) <br/>
 [简书 docker 社区](https://www.jianshu.com/c/fe5f5bed05c0) <br/>
 [sparkdev](https://www.cnblogs.com/sparkdev/) <br/>
+[exfly blog](https://exfly.github.io/post/) <br/>
 
 #### 开源项目
 

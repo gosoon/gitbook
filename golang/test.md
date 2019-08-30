@@ -1,3 +1,12 @@
+#### test tool
+```
+golint
+go vet 
+gometalinter ./...
+golangci-lint run ./...
+```
+
+
 #### Suite
 第二种比较常见的方式是按照簇进行组织，其实就是对 Go 语言默认的测试方式进行简单的封装，我们可以使用 [stretchr/testify](https://github.com/stretchr/testify) 中的 suite 包对测试进行组织：
 
