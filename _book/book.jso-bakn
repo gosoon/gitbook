@@ -11,6 +11,7 @@
 	"structure": {
 		"readme": "README.md"
 	},
+	//"plugins": ["splitter"],
 	"plugins": ["theme-comscore"],
 	"pluginsConfig": {
 		"github": {

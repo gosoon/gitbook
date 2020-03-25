@@ -23,6 +23,9 @@
 [浙江大学SEL实验室](http://www.sel.zju.edu.cn) <br/>
 [阿里云容器团队技术博客](https://yq.aliyun.com/teams/11) <br/>
 [阿里云容器服务 Kubernetes 文档](https://help.aliyun.com/product/85222.html?spm=a2c4g.11186623.6.540.31fa671fjcc25X) <br/>
+[IBM 云原生大讲堂](https://www.ibm.com/developerworks/community/wikis/home?lang=zh#!/wiki/W30b0c771924e_49d2_b3b7_88a2a2bc2e43/page/IBM%E5%BC%80%E6%BA%90%E6%8A%80%E6%9C%AF%E5%BE%AE%E8%AE%B2%E5%A0%82)
+
+
 
 [<font color="red">鱼儿的博客-源码分析</font>](https://yuerblog.cc/) <br/>
 [Cizixs Write Here - 蚂蚁金服](http://cizixs.com/archives/) <br/>
@@ -72,6 +75,7 @@
 [<font color="red">本饼干的日本码农就职总结</font>](http://vinci7.github.io/) <br/>
 
 
+
 ### kubernetes github  learn
 [learning-k8s-source-code](https://github.com/Kevin-fqh/learning-k8s-source-code) <br>
 [kube-ladder](https://github.com/caicloud/kube-ladder) <br>
@@ -81,23 +85,38 @@
 [Kubernetes Operator最佳实践](http://dockone.io/article/9088) <br>
 
 
+### kubernetes scale 
+https://mp.weixin.qq.com/s/x6F6k8Tu_qBzYCxqwyJmrg 
+Pod 垂直扩容和水平扩容: 问题：我想问下关于垂直扩容这个问题，现在一般是通过pod扩容，你们怎么去控制？一个pod在使用满的情况下肯定没法扩容，修改参数也没法生效，请问怎么处理这个问题？
+虎牙技术专家：虎牙的操作方法是：在修改完这个参数之后，把更新的一些策略发给调度器，调度器会实时更新自己的参数，当有新的用户更新的时候，会保证当前这个物理机的配置是实时的，我们的垂直扩容是基于监控的，没有监控也是不好做的，有监控的支持才好做配置，比如说监控告诉我这个使用率是30%，我完全可以给它扩容。
+用满的情况，基于虎牙的实际情况，虎牙设置的最大值和最小值的操作，我们是提供给每个业务的运维，业务的开发是不会操作这个上限的，是由运维来操作，运维操作的时候，他是会操作失败的，比如说这台机器上资源利用率已经很高了，你不能垂直扩容，只能选择别的方案。当然也有其他方案，比如水平扩容
+
 ### book 
-[](https://www.bookstack.cn/read/huweihuang-kubernetes-notes/develop-client-go.md)
+[develop-client-go](https://www.bookstack.cn/read/huweihuang-kubernetes-notes/develop-client-go.md)
+[kubernetes view](https://wiki.shileizcc.com/confluence/display/KUB/Kubernetes+CNI)
+
 
 ### ceph
 [<font color="red"> ceph blog</font>](http://www.yangguanjun.com/archives/) <br/>
 
 
-##### 外文博客
+### 外文博客
 [<font color="red">weave</font>](https://www.weave.works) <br/>
 [<font color="red">cncf blog</font>](https://www.cncf.io/blog) <br/>
 [<font color="red">giantswarm</font>](https://blog.giantswarm.io/) <br/>
 [<font color="red">banzaicloud</font>](https://banzaicloud.com/blog) <br/>
+[<font color="red"> ianlewis-google </font>](https://www.ianlewis.org/) <br/>
 
 #### etcd 
 [<font color="red">冯绍宝</font>](https://bbs.huaweicloud.com/community/usersnew/id_1523159494993289) <br/>
 
+#### kubernetes 性能优化
+[华为云在 K8S 大规模场景下的 Service 性能优化实践](https://zhuanlan.zhihu.com/p/37230013)
 
+
+
+#### helm
+[<font color="red"> helm blog</font>](https://helm.sh/blog/)
 
 #### Istio 相关博客
 
