@@ -104,3 +104,8 @@ func (t *Timestamp) GetString() string {
   tm2 := tm1.AddDate(0, 0, -1-i)
   startTime := tm2.UnixNano() / 1e6
 ```
+
+#### 5、timer 对象池
+
+https://github.com/nats-io/nats.go/blob/main/timer.go
+
