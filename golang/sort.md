@@ -1,3 +1,5 @@
+1.
+
 ```
 package main
 
@@ -60,3 +62,19 @@ func main() {
 
 
 [参考链接](https://dev.to/deanveloper/my-favorite-go-2-proposals-3lie)
+
+
+2. 使用 sort.Slice 对 int64 数组进行排序
+从大到小排序
+
+```
+func main() {
+    a := []int64{10, 9, 7, 16}
+    fmt.Println(a)
+
+    sort.Slice(a, func(i, j int) bool {
+        return a[i] > a[j]
+    })
+    fmt.Println(a)
+}
+```
