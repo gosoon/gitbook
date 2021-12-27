@@ -65,6 +65,8 @@ func main() {
 
 
 2. 使用 sort.Slice 对 int64 数组进行排序
+从大到小排序
+
 ```
 func main() {
     a := []int64{10, 9, 7, 16}
