@@ -39,5 +39,3 @@
 [深入剖析Kubernetes](https://time.geekbang.org/column/116) <br/>
 [数据结构与算法之美](https://time.geekbang.org/column/126) <br/>
 [左耳听风](https://time.geekbang.org/column/48) <br/>
-
-
