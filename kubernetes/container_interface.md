@@ -1,11 +1,9 @@
-### cni
+### CRI
 
 
-type CNI interface{
+![](https://cdn.tianfeiyu.com/cri.png)
 
-}
-
-
+### CNI
 
 
 代码实现：

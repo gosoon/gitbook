@@ -94,11 +94,13 @@ func (t *Timestamp) GetString() string {
 }
 ```
 
-#### 4、
+#### 4、time 包相关的一些用法
 
 ```
 1.time.Now().Add(t.ttl).Unix()
-2.    
+
+2.获取某天的时间戳
+
   t := time.Now() 
   tm1 := time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, t.Location())
   tm2 := tm1.AddDate(0, 0, -1-i)
