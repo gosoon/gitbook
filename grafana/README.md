@@ -7,3 +7,13 @@ where create_time/1000 >= $__unixEpochFrom() and create_time/1000 <= $__unixEpoc
 ```
 https://grafana.com/d/rHhmPUAGz/service=${__cell:0}&var-day=All
 ```
+
+3.ch 曲线图使用
+
+```
+SELECT
+  timestamp*1000 as "time"
+FROM xxx
+WHERE stage = 'xxx'
+ORDER by timestamp
+```

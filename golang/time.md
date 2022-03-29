@@ -105,6 +105,14 @@ func (t *Timestamp) GetString() string {
   tm1 := time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, t.Location())
   tm2 := tm1.AddDate(0, 0, -1-i)
   startTime := tm2.UnixNano() / 1e6
+
+3.获取过去一段时间的时间戳
+	now := time.Now()
+	recordTimestamp := now.Unix()
+	latestHourTimestamp := time.Now().Add(-1*time.Hour).UnixNano() / 1e9
+	latestDayTimestamp := time.Now().Add(-24*time.Hour).UnixNano() / 1e9
+	latestWeekTimestamp := time.Now().Add(-7*24*time.Hour).UnixNano() / 1e9
+
 ```
 
 #### 5、timer 对象池
