@@ -110,9 +110,19 @@ if cm.ApproveWindows.Load() != nil {
 }
 ```
 
+### 三、内存对齐
+
+CPU 访问内存时，并不是逐个字节访问，而是以字长（word size）为单位访问。比如 32 位的 CPU ，字长为 4 字节，那么 CPU 访问内存的单位也是 4 字节。64 的字长为8字节。
+
+简言之：合理的内存对齐可以提高内存读写的性能，并且便于实现变量操作的原子性。
+
+<img src="images/memory_alignment.png"></img>
+
 
 参考：
 
 https://hjlarry.github.io/docs/go/lock/
 
 https://mp.weixin.qq.com/s/pQBsAxnaBXkk7G1cdUgsww
+
+https://geektutu.com/post/hpg-struct-alignment.html
