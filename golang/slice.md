@@ -13,3 +13,25 @@ func main() {
 }
 ```
 
+
+2. some example 
+(1) array by group 
+```
+const (
+    queryNodeCountsByGroup = 10
+)
+
+group := int(math.Ceil(float64(len(nodeList)) / float64(queryNodeCountsByGroup)))
+for i := 0; i < group; i++ {
+    var nodeListGroup []string
+    if i+1 == group {
+        nodeListGroup = nodeList[i*queryNodeCountsByGroup : len(nodeList)]
+    } else {
+        nodeListGroup = nodeList[i*queryNodeCountsByGroup : (i+1)*queryNodeCountsByGroup]
+    } 
+}
+```
+
+
+
+
