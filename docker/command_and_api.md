@@ -16,6 +16,9 @@ ctr 命令使用方法与 docker-containerd-ctr 一致，仅是别名关系。
 # docker-containerd-ctr -a /var/run/docker/containerd/docker-containerd.sock -n moby c ls | grep -v IMAGE | awk '{print $1}' | xargs -ti docker-containerd-ctr -a /var/run/docker/containerd/docker-containerd.sock -n moby t ps {}
 
 # ctr -namespace moby shim --id 2b5d28320969e2ab962d83990a17f08895e2dc731ee8953406cc9ce5ed7b0bfd  state
+
+// laod image
+# ctr cri load image.tar
 ```
 
 
