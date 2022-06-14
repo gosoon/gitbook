@@ -36,3 +36,4 @@ containerd 从 1.2 版本开始支持 pigz，节点上安装 unpigz 工具后，
 
 [Serverless 场景下 Pod 创建效率优化](https://mp.weixin.qq.com/s/0OLdyVwg4Nsw0Xvvg8if5w)
 [镜像搬运工 skopeo 初体验](https://blog.k8s.li/skopeo.html)
+[Nydus —— 下一代容器镜像的探索实践](https://mp.weixin.qq.com/s/lJKYNjB1qy4jcoZtGW0QyQ)
