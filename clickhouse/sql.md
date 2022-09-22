@@ -35,3 +35,5 @@ CREATE TABLE IF NOT EXISTS example(
 select toDateTime(timestamp/1000) from xxx;
 ```
 
+3. argMin 与 argMax 的使用
+存在多列时，可以获取某一列的最大或最小值对应另一列的值
