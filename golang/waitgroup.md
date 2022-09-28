@@ -1,6 +1,4 @@
-
-
-````
+```
 func (jm *Controller) deleteActivePods(job *batch.Job, pods []*v1.Pod) (int32, error) {
     errCh := make(chan error, len(pods))
     successfulDeletes := int32(len(pods))
