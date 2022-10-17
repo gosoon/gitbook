@@ -48,20 +48,27 @@ done
 
 # goimports 自动导包
 if [ -f /usr/local/bin/goimports-reviser ]; then  # 检测是否安装
-	unimports=$(goimports-reviser -rm-unused -set-alias -format ${gofiles[@]})
-	if [ -n "$unimports" ]; then
-		echo >&2 "goimports FAIL:\nRun following command:"
-		for f in ${unimports[@]} ; do
-			echo >&2 " goimports -w $PWD/$f"
-		done
-		echo "\n"
-		has_errors=1
-	fi
+    for file in ${gofiles[@]} ; do
+        unimports=$(goimports-reviser -rm-unused -set-alias -format $file)
+        if [ -n "$unimports" ]; then
+            echo >&2 "goimports FAIL:\nRun following command:"
+            for f in ${unimports[@]} ; do
+                echo >&2 " goimports -w $PWD/$f"
+            done
+            echo "\n"
+            has_errors=1
+        fi
+    done
 else
 	echo 'Error: /usr/local/bin/goimports-reviser not install. Run: "go get -u golang.org/x/tools/cmd/goimports"' >&2
 	exit 1
 fi
 ```
 
+ref: [利用 git hook 规范你的代码与 commit message](https://razeen.me/posts/golang-and-git-commit-message-pre-commit/)
+
+3. format import 
+
+[Go语言import分组管理利器: goimports-reviser](https://zhuanlan.zhihu.com/p/411181637)
 
 
