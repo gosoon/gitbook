@@ -1,4 +1,6 @@
 
+参考：
+
 (程序员小吴)[https://cxyxiaowu.com/] <br/>
 
 (https://github.com/CyC2018/CS-Notes)[https://github.com/CyC2018/CS-Notes]
@@ -12,3 +14,6 @@ https://www.jianshu.com/u/18c2dd454f52
 
 [58 沈剑](https://blog.csdn.net/shenjian58/article/details/89850701)
 https://github.com/wangzheng0822/algo
+
+
+[算法题刷题经历](https://mp.weixin.qq.com/s/2r7gT7mS0cjiDIjErhOgZQ)
