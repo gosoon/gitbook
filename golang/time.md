@@ -17,6 +17,8 @@ string 转 time 格式：
 t, err := time.Parse("2006-01-02T15:04:05Z", "2019-03-05T09:01:11Z")
 
 t, err := time.Parse("01/02/2006", "02/08/2015")
+
+t, err := time.ParseInLocation("2006-1-2", "2022-10-21", time.Local)
 ```
 
 
