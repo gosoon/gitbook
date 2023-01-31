@@ -37,3 +37,44 @@ select toDateTime(timestamp/1000) from xxx;
 
 3. argMin 与 argMax 的使用
 存在多列时，可以获取某一列的最大或最小值对应另一列的值
+
+
+4.sql eg:
+```
+    SELECT
+      service_name,
+      deployment,
+      metric,
+      timestamp,
+      sum_cnt,
+      runningDifference(sum_sum) / sum_cnt as delta
+    FROM
+      (
+        SELECT
+          service_name,
+          deployment,
+          metric,
+          timestamp,
+          sum(sum) as sum_sum,
+          sum(cnt) as sum_cnt
+        from
+          %s
+        WHERE
+          timestamp > %v
+          and timestamp <= %v
+          and service_name in (%v)
+          and metric = '%s'
+        GROUP BY
+          service_name,
+          deployment,
+          metric,
+          timestamp
+        order by
+          service_name,
+          deployment,
+          metric,
+          timestamp asc
+      )
+    WHERE
+      sum_sum > 0 and sum_cnt > 0  FORMAT JSON
+```
