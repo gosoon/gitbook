@@ -89,3 +89,36 @@ kubelet 的 syncLoop 模块在执行清理 pod 操作时，卡在了删除某个
 
 
 挂载过 cephfs 的节点可能存在该问题，需要扫描一下线上机器。
+
+
+
+### 其他
+
+创建一个可以调用  kubelet 接口的 token ：
+
+```
+## kubelet api
+$ kubectl create sa kubelet-api-test
+$ kubectl create clusterrolebinding kubelet-api-test --clusterrole=system:kubelet-api-admin --serviceaccount=default:kubelet-api-test
+
+$ SECRET=$(kubectl get secrets | grep kubelet-api-test | awk '{print $1}')
+
+$ TOKEN=$(kubectl describe secret ${SECRET} | grep -E '^token' | awk '{print $2}')
+
+$ echo ${TOKEN}
+
+// 获取 kubelet 调用栈
+curl -Ssk --header "Authorization: Bearer ${TOKEN}" "https://127.0.0.1:10250/debug/pprof/goroutine?debug=1" > stack.txt
+
+// 获取 kubelet profile
+$ curl -Ssk --header "Authorization: Bearer ${TOKEN}" 'https://127.0.0.1:10250/debug/pprof/profile?seconds=60' -o cpu.prof
+
+// 打开火焰图
+$ go tool pprof ./cpu.prof
+```
+
+
+
+
+
+

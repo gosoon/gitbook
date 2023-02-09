@@ -24,4 +24,4 @@
 
 [蚂蚁集团万级规模 k8s 集群 etcd 高可用建设之路](https://mp.weixin.qq.com/s/_vLhUWh6dg8_26crQA7NpQ)
 
-
+[K8s 集群稳定性：LIST 请求源码分析、性能评估与大规模基础服务部署调优](http://arthurchiao.art/blog/k8s-reliability-list-data-zh/)
