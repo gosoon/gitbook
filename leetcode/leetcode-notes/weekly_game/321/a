@@ -1,0 +1,12 @@
+=== RUN   TestPivotInteger
+left:1 right:8 leftSum:1 rightSum:8 
+left:2 right:8 leftSum:3 rightSum:8 
+left:3 right:8 leftSum:6 rightSum:8 
+left:4 right:8 leftSum:10 rightSum:8 
+left:4 right:7 leftSum:10 rightSum:15 
+left:5 right:7 leftSum:15 rightSum:15 
+left:6 right:7 leftSum:21 rightSum:15 
+left:6 right:6 leftSum:21 rightSum:21 
+--- PASS: TestPivotInteger (0.00s)
+PASS
+ok  	_/Users/feilei/leetcode/weekly_game/321	0.005s

@@ -1,0 +1,5 @@
+=== RUN   TestSmallestValue
+[2 2 3]
+--- PASS: TestSmallestValue (0.00s)
+PASS
+ok  	_/Users/feilei/leetcode/weekly_game/324	0.005s
