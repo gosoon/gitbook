@@ -7,3 +7,9 @@ SELECT fo.id AS ID, fo.product AS 产品
     END AS 区域
     ,
 ```
+
+
+字符串拼接
+```
+ concat(region,"-") as "xxx",   
+```
