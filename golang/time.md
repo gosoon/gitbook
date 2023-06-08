@@ -139,3 +139,76 @@ func GetZeroTime(d time.Time) time.Time {
 
 https://github.com/nats-io/nats.go/blob/main/timer.go
 
+
+
+#### 6、计算两个日期相差多少个自然月和每个自然月的天数
+
+```
+type SubDaysByMonth struct {
+    Date     string
+    UsedDays int
+}
+
+func getSubDaysByMonth(returnTime, forecastTime time.Time) []SubDaysByMonth {
+    var subDaysByMonthList []SubDaysByMonth
+    subMonth := SubNatureMonth(returnTime, forecastTime)
+    for i := 0; i <= subMonth; i++ {
+        // next month start date
+        forecastTime := forecastTime.AddDate(0, i, 0)
+
+        subMonth := SubNatureMonth(returnTime, forecastTime)
+        var subDays int
+        // 需求和退还时间都在同月
+        if i == 0 && subMonth == 0 {
+            subDays = SubDays(returnTime, forecastTime) + 1
+            // 需求和退还时间不在同月，计算第一个月的天数
+        } else if i == 0 {
+            lastDateOfMonth := GetLastDateOfMonth(forecastTime)
+            subDays = SubDays(lastDateOfMonth, forecastTime) + 1
+            // 最后一个月的
+        } else if subMonth == 0 {
+            firstDateOfMonth := GetFirstDateOfMonth(forecastTime)
+            subDays = SubDays(returnTime, firstDateOfMonth) + 1
+        } else {
+            // 整月的
+            firstDateOfMonth := GetFirstDateOfMonth(forecastTime)
+            lastDateOfMonth := GetLastDateOfMonth(forecastTime)
+            subDays = SubDays(lastDateOfMonth, firstDateOfMonth) + 1
+        }
+        subDaysByMonth := SubDaysByMonth{Date: GetFirstDateOfMonth(forecastTime).Format("2006-01-02"), UsedDays: subDays}
+        subDaysByMonthList = append(subDaysByMonthList, subDaysByMonth)
+    }
+    return subDaysByMonthList
+}
+
+
+// 计算日期相差多少自然月
+func SubNatureMonth(t1, t2 time.Time) (month int) {
+    y1 := t1.Year()
+    y2 := t2.Year()
+    m1 := int(t1.Month())
+    m2 := int(t2.Month())
+
+    yearInterval := y1 - y2
+    monthInterval := m1 - m2
+    return yearInterval*12 + monthInterval
+}
+
+// 获取传入的时间所在月份的第一天，即某月第一天的0点。如传入time.Now(), 返回当前月份的第一天0点时间。
+func GetFirstDateOfMonth(d time.Time) time.Time {
+    d = d.AddDate(0, 0, -d.Day()+1)
+    return GetZeroTime(d)
+}
+
+// 获取传入的时间所在月份的最后一天，即某月最后一天的0点。如传入time.Now(), 返回当前月份的最后一天0点时间。
+func GetLastDateOfMonth(d time.Time) time.Time {
+    return GetFirstDateOfMonth(d).AddDate(0, 1, -1)
+}
+
+// 获取某一天的0点时间
+func GetZeroTime(d time.Time) time.Time {
+    return time.Date(d.Year(), d.Month(), d.Day(), 0, 0, 0, 0, d.Location())
+}
+
+```
+
