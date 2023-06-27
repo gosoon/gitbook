@@ -25,5 +25,6 @@ SELECT fo.id AS ID, fo.product AS 产品
  group_concat(spec separator ' , ') as gpu_spec
 ```
 
+3.golang 保存浮点数时为避免精度丢失，mysql 表字段需要使用 double 类型
 
 
