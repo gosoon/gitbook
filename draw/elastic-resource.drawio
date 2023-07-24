@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-24T08:36:07.349Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="oz1rEJYJN_9Yx-aGPD80" version="21.6.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-07-24T08:36:37.838Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="MNXqnFoMpYi09VIi149H" version="21.6.2" type="github" pages="4">
   <diagram name="各场景流程" id="5dgDd4KbKT9cXbTQrxrw">
     <mxGraphModel dx="5058" dy="5693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -2595,6 +2595,12 @@
         </mxCell>
         <mxCell id="BtEUstvqZhGB74DSFZyX-195" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;监控步骤执行&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1220" y="2490" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BtEUstvqZhGB74DSFZyX-198" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;流程管理模块&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="645" y="2130" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BtEUstvqZhGB74DSFZyX-199" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;决策模块&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="2130" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
