@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-25T08:41:48.455Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="YnqZ83hZdX229eArNjFR" version="21.6.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-07-25T08:42:37.721Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="AJMYy50jbsVvaqCN0IWS" version="21.6.2" type="github" pages="4">
   <diagram name="各场景流程" id="5dgDd4KbKT9cXbTQrxrw">
     <mxGraphModel dx="4795" dy="5551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -2741,9 +2741,9 @@
         <mxCell id="BtEUstvqZhGB74DSFZyX-247" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;任务状态更新&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1074" y="3700" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BtEUstvqZhGB74DSFZyX-275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="BtEUstvqZhGB74DSFZyX-248">
+        <mxCell id="BtEUstvqZhGB74DSFZyX-275" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeWidth=2;" edge="1" parent="1" source="BtEUstvqZhGB74DSFZyX-248">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="470" y="3990" as="targetPoint" />
+            <mxPoint x="460" y="3990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BtEUstvqZhGB74DSFZyX-248" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;流程管理模块&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
@@ -2764,7 +2764,7 @@
             <mxPoint x="700" y="3940" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BtEUstvqZhGB74DSFZyX-256" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.655;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="BtEUstvqZhGB74DSFZyX-250">
+        <mxCell id="BtEUstvqZhGB74DSFZyX-256" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.655;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=1;" edge="1" parent="1" target="BtEUstvqZhGB74DSFZyX-250">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="820" y="3950" as="sourcePoint" />
             <mxPoint x="775" y="4060" as="targetPoint" />
