@@ -29,3 +29,12 @@ FROM xxx
 WHERE stage = 'xxx'
 ORDER by timestamp
 ```
+
+4、变量使用
+使用变量的原始类型，避免变量从数字变为字符串
+
+```
+${var:raw}
+```
+ref:https://community.grafana.com/t/possible-to-have-an-int-as-a-template-variable/16593/2
+
